@@ -1,0 +1,91 @@
+﻿body {
+    margin: 0 auto;
+    padding: 0;
+    background: url(https://abrakadabra.fun/uploads/posts/2022-03/1647523596_1-abrakadabra-fun-p-goluboi-fon-shkolnii-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #0A99E0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul > li {
+    margin-top: 10px;
+    margin-bottom: 20px;
+} 
+
+ul a {
+    margin-top: 20px;
+    color: #0A99E0;
+    text-decoration: none;
+    font-size: 170%;
+    text-shadow: none;
+}
+
+ul a:hover {
+    text-shadow: 0 0 10px #03ADFE;
+}
+
+.get-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0 50px 0 50px;
+}
+
+.back-btn {
+    color: #0A99E0;
+    display: block;
+    padding: 10px 20px;
+    background-color: #E8F7FE;
+    border: 2px solid #0A99E0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    text-align: left;
+    border-collapse: collapse;
+    border-radius: 5px;
+    box-shadow: 0 0 0 5px #0A99E0;
+    color: #0A99E0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+th {
+    padding: 10px 8px;
+    background: white;
+}
+
+table th:first-child {
+    border-top-left-radius: 5px;
+}
+
+table th:last-child {
+    border-top-right-radius: 5px;
+}
+
+td {
+    border-top: 3px solid #0A99E0;
+    padding: 8px;
+    background: #E8F7FE;
+}
+
+table td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+table td:last-child {
+    border-bottom-right-radius: 5px;
+}

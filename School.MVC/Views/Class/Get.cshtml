@@ -1,0 +1,33 @@
+﻿@model List<Class>
+
+<div class="get-div">
+    <h1 style="font-size: 280%; text-shadow: 0 0 20px #FEFEFE;">Class</h1>
+
+    <a class="back-btn" href="/Home/Index">Back</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Number</th>
+                <th>Count of students</th>
+                <th>Creation Year</th>
+                <th>Classroom teacher</th>
+                <th>Type of class</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var classModel in @Model)
+            {
+                <tr>
+                    <td>@classModel.Id</td>
+                    <td>@classModel.Number</td>
+                    <td>@classModel.StudentsCount</td>
+                    <td>@classModel.CreationYear</td>
+                    <td>@classModel.ClassroomTeacher.Surname @classModel.ClassroomTeacher.Name @classModel.ClassroomTeacher.MiddleName, @classModel.ClassroomTeacher.Position</td>
+                    <td>@classModel.ClassType.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

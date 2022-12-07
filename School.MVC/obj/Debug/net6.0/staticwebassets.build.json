@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "EtFawk2gd8+Dd0vhvuRWNeNM2liT7ixKr5YAbC+bIt4=",
+  "Source": "School.MVC",
+  "BasePath": "_content/School.MVC",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "School.MVC\\wwwroot",
+      "Source": "School.MVC",
+      "ContentRoot": "D:\\Study\\Labs\\БД\\№4\\School\\School.MVC\\wwwroot\\",
+      "BasePath": "_content/School.MVC",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Study\\Labs\\БД\\№4\\School\\School.MVC\\wwwroot\\css\\index.css",
+      "SourceId": "School.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Study\\Labs\\БД\\№4\\School\\School.MVC\\wwwroot\\",
+      "BasePath": "_content/School.MVC",
+      "RelativePath": "css/index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\index.css"
+    }
+  ]
+}

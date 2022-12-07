@@ -1,0 +1,27 @@
+﻿@model List<Teacher>
+
+<div class="get-div">
+    <h1 style="font-size: 280%; text-shadow: 0 0 20px #FEFEFE;">Teacher</h1>
+
+    <a class="back-btn" href="/Home/Index">Back</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Full Name</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var teacher in @Model)
+            {
+                    <tr>
+                        <td>@teacher.Id</td>
+                        <td>@teacher.Surname @teacher.Name @teacher.MiddleName</td>
+                        <td>@teacher.Position</td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+</div>

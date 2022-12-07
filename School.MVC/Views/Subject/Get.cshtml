@@ -1,0 +1,27 @@
+﻿@model List<Subject>
+
+<div class="get-div">
+    <h1 style="font-size: 280%; text-shadow: 0 0 20px #FEFEFE;">Subject</h1>
+
+    <a class="back-btn" href="/Home/Index">Back</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var subject in @Model)
+            {
+                <tr>
+                    <td>@subject.Id</td>
+                    <td>@subject.Name</td>
+                    <td>@subject.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

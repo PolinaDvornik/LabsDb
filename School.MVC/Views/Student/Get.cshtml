@@ -1,0 +1,40 @@
+﻿@model List<Student>
+
+<div class="get-div">
+    <h1 style="font-size: 280%; text-shadow: 0 0 20px #FEFEFE;">Student</h1>
+
+    <a class="back-btn" href="/Home/Index">Back</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Full Name</th>
+                <th>Birth date</th>
+                <th>Sex</th>
+                <th>Address</th>
+                <th>Mother Full Name</th>
+                <th>Futher Full Name</th>
+                <th>Additional Info</th>
+                <th>Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in @Model)
+            {
+                string sex = student.Sex ? "male" : "female";
+                <tr>
+                    <td>@student.Id</td>
+                    <td>@student.Surname @student.Name @student.MiddleName</td>
+                    <td>@student.BirthDate</td>
+                    <td>@student.Sex</td>
+                    <td>@student.Address</td>
+                    <td>@student.MotherFullName</td>
+                    <td>@student.FutherFullName</td>
+                    <td>@student.AdditionalInfo</td>
+                    <td>@student.Class.Number</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

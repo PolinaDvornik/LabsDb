@@ -1,0 +1,35 @@
+﻿@model List<Schedule>
+
+<div class="get-div">
+    <h1 style="font-size: 280%; text-shadow: 0 0 20px #FEFEFE;">Schedule</h1>
+
+    <a class="back-btn" href="/Home/Index">Back</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Date</th>
+                <th>Day of week</th>
+                <th>Time</th>
+                <th>Class</th>
+                <th>Teacher</th>
+                <th>Subject</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var schedule in @Model)
+            {
+                <tr>
+                    <td>@schedule.Id</td>
+                    <td>@schedule.Date.Date</td>
+                    <td>@schedule.DayOfWeek</td>
+                    <td>@schedule.StartLessonTime - @schedule.EndLessonTime</td>
+                    <td>@schedule.Class.Number</td>
+                    <td>@schedule.Teacher.Surname @schedule.Teacher.Name @schedule.Teacher.MiddleName</td>
+                    <td>@schedule.Subject.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
